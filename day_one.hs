@@ -1,5 +1,4 @@
 import Data.List (groupBy, sort)
-import Data.Tree (flatten)
 import System.IO
 
 partOne :: [[String]] -> Int
