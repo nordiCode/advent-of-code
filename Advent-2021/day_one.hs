@@ -11,7 +11,7 @@ mapInc (x,y)
   | x < y = 1
   | otherwise = 0
 
--- from Gabriella Gonzalez write up
+-- from Gabriella Gonzalez write up on sliding windows
 windows n xs = transpose (take n (tails xs))
 -- print $ sum . map mapInc $ zip <*> tail $ xs
 
