@@ -22,4 +22,4 @@ readInt = read
 main :: IO ()
 main = do
   contents <- readFile "day_four.txt"
-  print $ sum . map scoreOverlaps $ map mapTuple . map (splitOn ",") $ lines contents
+  print $ sum $ map (scoreOverlaps . mapTuple . splitOn ",") $ lines contents
