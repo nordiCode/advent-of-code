@@ -14,7 +14,7 @@ stringMid :: String -> (String, Int)
 stringMid s = (s, midPoint s)
 
 stringHalves :: ([a], Int) -> ([a], [a])
-stringHalves (x, y) = Prelude.splitAt y x
+stringHalves (x, y) = splitAt y x
 
 alphaNum :: [Char] -> Maybe Int
 alphaNum (x : xs) = elemIndex x alpha
