@@ -32,6 +32,6 @@ inAllThree [s1,s2,s3] = filter (\x -> (x `elem` s1) && (x `elem` s2)) s3
 
 main :: IO ()
 main = do
-  contents <- readFile "day_three.txt"
+  contents <- readFile "./res/day_three.txt"
   let x = lines contents
   print $ sum . map (+1) $ fmap sum $ map (alphaNum .nub . inAllThree) $ Sp.chunksOf 3 x
