@@ -10,15 +10,15 @@ numbers = ["one","two","three","four","five","six","seven","eight","nine"]
 numbersToInt :: String -> String
 numbersToInt x 
   | x == "zero" = "0"
-  | x == "one" = "one1one"
-  | x == "two" = "two2two"
-  | x == "three" = "three3three"
-  | x == "four" = "four4four"
-  | x == "five" = "five5five"
-  | x == "six" = "six6six"
-  | x == "seven" = "seven7seven"
-  | x == "eight" = "eight8eight"
-  | x == "nine" = "nine9nine"
+  | x == "one" = "1"
+  | x == "two" = "2"
+  | x == "three" = "3"
+  | x == "four" = "4"
+  | x == "five" = "5"
+  | x == "six" = "6"
+  | x == "seven" = "7"
+  | x == "eight" = "8"
+  | x == "nine" = "9"
   | otherwise = x
 
 firstLast :: [a] -> [a]
