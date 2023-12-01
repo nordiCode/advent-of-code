@@ -41,5 +41,5 @@ main :: IO ()
 main = do 
   contents <- readFile "day_one.txt"
   let ints = map lineToInt $ words contents 
-  let arr =  map (read . firstLast . filter isDigit) $ ints
+  let arr =  map (read . firstLast . filter isDigit) ints
   print $ sum arr
