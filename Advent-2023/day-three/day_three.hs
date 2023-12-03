@@ -56,9 +56,7 @@ adjacentPtsList pts = reverse $ go pts []
       | adjacentPts pt (head group) = go pts ((pt:group):accGroups)
       | otherwise = go pts ([pt]:group:accGroups)
 
-
-
-
+-- for p1
 -- extractNumbersForLists :: [[(Int, Int)]] -> [String] -> [String]
 -- extractNumbersForLists lists grid = map (\coords -> extractNumbers (nub coords) grid) lists
 
