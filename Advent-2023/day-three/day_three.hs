@@ -76,6 +76,7 @@ fillNumbers pairsLists grid = map (\pairsList -> map (\pairs -> concatMap (\(y, 
 extractNumbers :: (Int, Int) -> [[a]] -> [a]
 extractNumbers coords grid =  (\(y, x) -> [grid !! y !! x]) coords
 
+-- Very inefficient
 main :: IO ()
 main = do 
     contents <- readFile "day_three.txt"
