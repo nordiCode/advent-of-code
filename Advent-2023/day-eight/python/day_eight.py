@@ -59,32 +59,11 @@ with open("day_eight.txt", mode="r") as file:
             if r_l == "R":
                 nextMove = next_moves[i][1]
                 curr[i] = locs[nextMove]
-                # curr = list(reversed(curr))
                 found.append(nextMove)
             else:
                 nextMove = next_moves[i][0]
                 curr[i] = locs[nextMove]
-                # curr = list(reversed(curr))
-
-                # print(curr)
                 found.append(nextMove)
-            # curr.pop(0)
-            # print(curr)
-        # print(f"updated {curr}")
-        # print(f"found {found}")
-        # found = ["ZZZ"]
-        steps += 1
-    # while found != "ZZZ":
-    #     move = steps % len(moves)
-    #     r_l = moves[move]
-    #     if r_l == "R":
-    #         nextMove = curr[1]
-    #         curr = locs[nextMove]
-    #         found = nextMove
-    #     else:
-    #         nextMove = curr[0]
-    #         curr = locs[nextMove]
-    #         found = nextMove
 
-    #     steps += 1
+        steps += 1
     print(steps)

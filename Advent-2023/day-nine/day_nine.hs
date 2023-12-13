@@ -25,7 +25,7 @@ diffLine xs = go xs
 
 cleanLines :: [String] -> [[Int]]
 cleanLines xs = go xs []
-  where
+  where 
     go [] acc = reverse  acc
     go (x:xs) acc = go xs (cleanLine x : acc)
 
